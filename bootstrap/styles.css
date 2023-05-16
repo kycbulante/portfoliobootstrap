@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Abyssinica SIL', serif;
+}
+
+.navbar{
+    background: transparent!important;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding: 1.2rem;
+}
+.navbar-brand img{
+    height: auto;
+    padding-left: 50px;
+    width: 250px;
+
+}
+.navbar-toggler{
+border-color: pink;
+border-width: 3px;
+}
+.navbar-toggler-icon{
+    background-color: pink;
+    filter: black;
+
+}
+.navbar .nav-link{
+    color: pink;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+.nav-item .nav-link{
+    background-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: pink;
+    padding: 2px;
+    margin-right: 10px;
+}
+.nav-item .nav-link:hover{
+    color: black;
+    background-color: pink;
+}
+
+#home{
+    height: 175vh;
+    width: 100%;
+    background-image:url(images/bg.jpg);
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+
+}
+.content{
+    text-align: center;
+    height: 35vh;
+}
+#carouselExampleIndicators{
+    width: 50%;
+    margin-left: 320px;
+}
+
+#home .content h3{
+    font-size: 50px;
+    color: white;
+}
+#home .content h3 span{
+    color: pink;
+    font-weight: bold;
+}
+#home .content p{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 20px;
+
+}
+#about{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, pink 20%,  black 70%);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    color: white;
+}
+#about .card img{
+    background-color: pink;
+    border: 2px solid black;
+}
+#about h3{
+    color: white;
+    border-bottom: 2px solid black;
+    width: 150px;
+}
+#about span{
+    color: black;
+
+}
+#portfolio{
+    width: 100%;
+    height: 75vh;
+    background-color: black;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+#portfolio h1{
+    color: white;
+    padding-top: 15px;
+    border-bottom: 2px solid pink;
+}
+
+#portfolio .card{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#portfolio .card:hover{
+    transform: translateY(-10px);
+}
+
+#services{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    color: white;
+}
+#services h1{
+    border-bottom: 2px solid pink;
+}
+
+#services .card{
+    transition: 0.5s ease;
+    cursor: pointer;
+    color: black;
+}
+#services .card h2{
+    color: black;
+    text-align: center;
+}
+#services .card:hover{
+    background-color: pink;
+}
+#services .card i{
+    font-size: 42px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+}
+#contact h1{
+    color: white;
+    border-bottom: 2px solid pink;
+    width: 210px;
+    padding-top: 50px;
+}
+#contact p{
+    color: white;
+}
+#contact i{
+    color: pink;
+    margin-top: 30px;
+    margin-left: 7px;
+    font-size: 20px;
+}
+.social-links i{
+    padding-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    color:pink;
+}
+#footer{
+    width: 100%;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#footer h1{
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+    text-shadow: 0px 0px 1px;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+@media screen and (max-width:767px){
+    #carouselExampleIndicators{
+        width: 50%;
+        margin-top: 100px;
+        margin-left: 160px;
+    }
+    #about{
+        height: 150vh;
+    }
+    #about p{
+        font-size: 17px;
+    }
+    #services{
+        height: 200vh;
+    }
+    #services h1{
+        border-bottom: 2px solid pink;
+        padding-top: 600px;
+    }
+}
+
+
+@media screen and (max-width:987px){
+    #about p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:500px){
+    #about{
+        height: 120vh;
+    }
+}
